@@ -104,7 +104,7 @@ CREATE TABLE TableName(
 
 Add `foreign key` to existing Table
 ```sql
-ALTER TABLE TableName ADD CONSTRAINT FK_name FOREIGN KEY (column); 
+ALTER TABLE TableName ADD CONSTRAINT FK_name FOREIGN KEY (column) REFERENCES TAB_Name (Col name); 
 ```
 
 <br>
@@ -122,7 +122,7 @@ Change `foreign key` from one to another column in existing Table
 ALTER TABLE TableName DROP CONSTRAINT FK_name; 
 ```
 ```sql
-ALTER TABLE TableName ADD CONSTRAINT FK_name FOREIGN KEY (column); 
+ALTER TABLE TableName ADD CONSTRAINT FK_name FOREIGN KEY (column) REFERENCES TAB_Name (Col name);
 ```
 
 <br><br>
